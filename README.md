@@ -61,4 +61,11 @@ Utilizando o -v também conseguimos utilizar o volume, EX:
 docker run -d --name nginx3 -v meuvolume:/app nginx
 
 
+docker ps -a -q
+// lista somente o ID de todos os container
+ 
+docker rm $(docker ps -a -q) -f
+// remove todos os container que vim do comando que está entre $(), ou seja, remove todos os containes
+
+ 
 
